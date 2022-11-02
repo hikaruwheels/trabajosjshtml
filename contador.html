@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <style>
+        #cont{
+            color:coral
+        }
+    </style>
+    <script>
+        var contador = 0;
+        function cuenta(){
+            this.contador = this.contador + 1;
+            console.log(contador);
+            document.getElementById("cont").innerHTML = contador;
+        }
+            function reiniciar(){
+            this.contador = this.contador = 0;
+            console.log(contador);
+            document.getElementById("cont").innerHTML = contador;
+        }
+    </script>
+    <h1 id="cont"></h1>
+    <input value="cuenta click" type="submit" id="cont" onclick="cuenta();" />
+    <input value="Reiniciar contador" type="submit" id="cont" onclick="reiniciar();" />
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+</head>
+<script>
+    function saluda(celda){
+        alert(celda);
+    }
+</script>
+<style>
+    .par{
+        background-color: green;
+        height: 100px;
+        width: 100px;
+    }  
+    .impar{
+        background-color: violet;
+        height: 100px;
+        width: 100px;
+    }
+    </style>
+    <body>
+
+     <table>
+         <tr>
+             <td>
+                 <div id="celda0" class="par" onclick="alert('test');"></div>
+             </td>
+             <td>
+                 <div id="celda1" class="impar" onclick="alert('aleee');"></div>
+             </td>
+             <td>
+                 <div id="celda2" class="par" onclick="alert('pacorrito<3');"></div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div id="celda3" class="impar"></div>
+             </td>
+             <td>
+                 <div id="celda4" class="par"></div>
+             </td>
+             <td>
+                 <div id="celda5" class="impar"></div>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <div id="celda6" class="par"></div>
+             </td>
+             <td>
+                 <div id="celda7" class="impar"></div>
+             </td>
+             <td>
+                 <div id="celda8" class="par"></div>
+             </td>
+         </tr>
+     </table>
+
+</body>
+</html>
