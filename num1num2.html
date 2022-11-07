@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+</head>
+<body>
+    Num1: <input type="text" id="num1"><br>
+    Num2: <input type="text" id="num2"><br>
+    <input type="button" value="Sumar" onclick="sumar()"><br>
+    <input type="button" value="Restar" onclick="restar()"><br>
+    <input type="button" value="Multiplicar" onclick="multiplicar()"><br>
+    <input type="button" value="Dividir" onclick="dividir()"><br>
+
+    <script>
+        function sumar(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var resultado = parseInt(num1) + parseInt(num2); 
+            alert(resultado);
+        }
+            function restar(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var resultado = parseInt(num1) - parseInt(num2); 
+            alert(resultado);
+        }
+        function multiplicar(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var resultado = parseInt(num1) * parseInt(num2); 
+            alert(resultado);
+        }
+        function dividir(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            if(num2 == 0){
+                alert("No se puede dividir entre 0 mi amol")
+            }else{
+                var resultado = parseInt(num1) / parseInt(num2); 
+            alert(resultado);
+            }  
+        }
+    </script>
+</body>
+</html>
